@@ -18,7 +18,7 @@ var (
 	device  string
 	passes  int
 	output  string
-	certDir string
+	// certDir string
 )
 
 func main() {
@@ -28,7 +28,7 @@ func main() {
 			log.Fatal("Failed to discover devices: %v", err)
 		}
 		for _, dev := range devices {
-			fmt.Printf("%s\n", dev.Name)
+			fmt.Printf("%s %s\n", dev.Model, dev.Size)
 		}
 		os.Exit(0)
 	} 
@@ -75,8 +75,8 @@ func saveCertificate(cert *cert.Certificate, output string) error {
 	pdf.SetFont("Arial", "", 12)
 	pdf.Cell(40, 10, fmt.Sprintf("Device: %s", cert.Device))
 	pdf.Ln(10)
-	pdf.Cell(40, 10, fmt.Sprintf("Passes: %d", cert.Passes))
-	pdf.Ln(10)
+	// pdf.Cell(40, 10, fmt.Sprintf("Passes: %d", cert.Passes))
+	// pdf.Ln(10)
 	pdf.Cell(40, 10, fmt.Sprintf("Duration: %s", cert.Duration))
 	pdf.Ln(10)
 	pdf.Cell(40, 10, fmt.Sprintf("Platform: %s", cert.Platform))
