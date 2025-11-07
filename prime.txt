@@ -1,0 +1,5 @@
+[ HDD | Removable | Temp ] -----------------> fstream + random patterns
+[ SSD ] ------------------------------------> ioctl (Linux) | DeviceIoControl (Windows)
+[ HPA | DCO ] ------------------------------> ioctl (Linux) | DeviceIoControl (Windows)
+[ Android Internal Storage ] ---------------> fstream | block I/O (ISO boot or Linux)
+[ Android External Storage ] ---------------> fstream + random patterns
