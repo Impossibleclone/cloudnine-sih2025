@@ -5,7 +5,7 @@ import (
 	"cloudnine-sih2025/internals/scanner"
 	"cloudnine-sih2025/internals/wipe"
 	"cloudnine-sih2025/pkg/log"
-	"encoding/json"
+	// "encoding/json"
 	"flag"
 	"fmt"
 	"os"

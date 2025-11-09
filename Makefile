@@ -1,4 +1,4 @@
-APP_NAME := wipe_tool
+APP_NAME := wipe-x86_64-unknown-linux-gnu
 CMD_DIR := ./cmd/wipe
 BUILD_DIR := ./build
 
